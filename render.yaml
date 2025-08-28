@@ -1,0 +1,26 @@
+# render.yaml
+services:
+  - type: web
+    name: backend
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+    port: 5000
+
+  - type: web
+    name: frontend
+    env: docker
+    dockerfilePath: ./frontend/Dockerfile
+    dockerContext: ./frontend
+    envVars:
+      - key: REACT_APP_API_URL
+        fromService:
+          type: web
+          name: backend
+          property: url
+    port: 80
