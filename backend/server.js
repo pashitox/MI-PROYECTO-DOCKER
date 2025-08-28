@@ -22,6 +22,7 @@ app.get('/api/data', (req, res) => {
   res.json({
     users: [
       { id: 1, name: 'Juan Pérez', email: 'juan@email.com' },
+       { id: 1, name: 'karines brito', email: 'karines@gmail.com' },
       { id: 2, name: 'María García', email: 'maria@email.com' }
     ],
     server: 'Express con Docker',

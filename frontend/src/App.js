@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>🚀 Mi Aplicación Dockerizada</h1>
+        <h1>🚀 Mi Aplicación Dockerizada + practica pashitox</h1>
         <p>Frontend + Backend con Docker Compose</p>
         
         {loading && <p className="loading">⏳ Cargando datos del backend...</p>}
