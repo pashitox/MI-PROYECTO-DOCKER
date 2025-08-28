@@ -1,0 +1,13 @@
+# 🐳 Proyecto Full-Stack con Docker
+
+Este es un proyecto de ejemplo que demuestra cómo dockerizar una aplicación full-stack (React + Node.js) usando Docker Compose.
+
+## 🚀 Características
+
+- **Frontend**: React con Nginx
+- **Backend**: Node.js + Express
+- **Docker**: Contenedores optimizados
+- **Docker Compose**: Orquestación de servicios
+- **Makefile**: Automatización de comandos
+
+## 📦 Estructura del Proyecto

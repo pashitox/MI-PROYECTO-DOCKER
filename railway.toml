@@ -1,0 +1,13 @@
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "docker-compose.yml"
+
+[deploy]
+numReplicas = 1
+restartPolicyType = "ON_FAILURE"
+startCommand = ""
+
+[[services]]
+name = "fullstack-app"
+numReplicas = 1
+startCommand = ""
