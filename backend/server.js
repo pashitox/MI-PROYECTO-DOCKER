@@ -25,7 +25,7 @@ app.get('/api/data', (req, res) => {
       { id: 2, name: 'María García', email: 'maria@email.com' }
     ],
     server: 'Express con Docker',
-    environment: process.env.NODE_ENV || 'development'
+    environment: process.env.NODE_ENV || 'production'
   });
 });
 
@@ -36,7 +36,7 @@ app.use((err, req, res, next) => {
 });
 
 // Puerto desde variable de entorno o por defecto 5000
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
 // Iniciar servidor
 app.listen(PORT, () => {
